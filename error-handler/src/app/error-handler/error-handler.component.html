@@ -1,0 +1,6 @@
+<div *ngIf="this.errors.length > 0">
+    <div *ngFor="let error of errors, let i = index" class="error-div">
+        {{error}}
+        <button class='delete-button' (click)="delete(i)">&times;</button>
+    </div>
+</div>
